@@ -1,9 +1,7 @@
 <html>
 
 <head>
-    <title>-</title>
-    <!-- 引入样式 -->
-    <link rel="stylesheet" href="lib/elementui/theme-chalk/index.css" type="text/css">
+    <title>Mysite</title>
     <style>
       /* 所有 */
       #app{
@@ -90,46 +88,6 @@
     </el-container>
   </el-container>
 </div>
-<!-- 引入组件库 -->
-<script type="text/javascript" src="lib/vue.js"></script>
-<script type="text/javascript" src="lib/elementui/index.js"></script>
-
-<script type="text/javascript">
-    new Vue({
-        el: "#app",
-        data: {
-          activeIndex : "1",
-          aboutMeUrl : "aboutme.html",
-          iframeUrl : "aboutme.html",
-
-          menus : [
-            {
-               name: "dialog",
-               id: "dialog",
-               iconClass: "el-icon-message",
-               children:[
-                 {
-                   name: "Notification 通知",
-                   id: "notification",
-                   children: [
-                     {name: "demo1", id: "noti-demo1", url: "dialog/notification/notification.html"}
-                   ]
-                 }
-               ]
-            }
-          ]
-        },
-        methods: {
-          open(url){
-            this.iframeUrl = url;
-          },
-          openGitHub(){
-            window.open("https://github.com/yuleGH", "_blank");
-          }
-        }
-    });
-</script>
-
 </body>
 
 </html>
